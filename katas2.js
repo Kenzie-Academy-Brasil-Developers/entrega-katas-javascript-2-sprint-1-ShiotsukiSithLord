@@ -1,23 +1,45 @@
 // comece a criar a sua função add na linha abaixo
+function add(x,y) {
+   adi = x + y;
+
+  return adi
+}
+console.log(add())
 
 
-// descomente a linha seguinte para testar sua função
-// console.assert(add(3, 5) === 8, 'A função add não está funcionando como esperado');
 
 
 // comece a criar a sua função multiply na linha abaixo
+function multiply(x,y) {
+ multi = 0
+  for( i = 0; i < y; i++){
+     multi = add(x,multi);
 
-
-// descomente a linha seguinte para testar sua função
-// console.assert(multiply(4, 6) === 24, 'A função multiply não está funcionando como esperado');
-
+  }
+  return multi
+}
+console.log(multiply())
 
 // comece a criar a sua função power na linha abaixo
+function power(x, y) {
+    SithLord = x * ( x * y);
 
+    return SithLord
+}
+console.log(power)
 
-// descomente a linha seguinte para testar sua função
-// console.assert(power(3, 4) === 81, 'A função power não está funcionando como esperado');
+function factorial() {
+    xFac = [];
+    
+    for( i = 0; i < factorial.length; i++){
+        if( xFac[i] > 0){
+            xFac = multiply  
+        }
+    }
+    return xFac
 
+}
+ console.log()
 
 // comece a criar a sua função factorial na linha abaixo
 
