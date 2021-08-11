@@ -11,8 +11,8 @@ console.log(add())
 
 // comece a criar a sua função multiply na linha abaixo
 function multiply(x,y) {
- multi = 0
-  for( i = 0; i < y; i++){
+ multi = 0;
+  for( let i = 0; i < y; i++){
      multi = add(x,multi);
 
   }
@@ -21,39 +21,48 @@ function multiply(x,y) {
 console.log(multiply())
 
 // comece a criar a sua função power na linha abaixo
-function power(x, y) {
-    SithLord = x * ( x * y);
+function power(x,n){
+    SithLord = 1;
+    
+    for(let i = 0; i< n; i++){
+        SithLord = multiply(SithLord,x);
 
+
+    }
     return SithLord
 }
-console.log(power)
+ console.log(power())
 
-function factorial() {
-    xFac = [];
-    
-    for( i = 0; i < factorial.length; i++){
-        if( xFac[i] > 0){
-            xFac = multiply  
-        }
+function factorial(x) {
+    Inc = 1;
+
+    for(let i = 1; i <= x ; i++){
+        Inc = multiply(Inc,i);
+
     }
-    return xFac
-
+    return Inc
 }
- console.log()
-
-// comece a criar a sua função factorial na linha abaixo
+console.log(factorial())
 
 
-// descomente a linha seguinte para testar sua função
-// console.assert(factorial(5) === 120, 'A função factorial não está funcionando como esperado');
+
+function fibonacci(z){
+    Nani = 1;
+   NicoNicoNi = 0;
+   DifilKKKKrying = 0;
+   
+//tentei um mihão de variaveis ;-;
+
+    for(let i = 1; i <= z; i++){
+        DifilKKKKrying = add(Nani,NicoNicoNi);
+     Nani = NicoNicoNi;
+     NicoNicoNi = DifilKKKKrying;
+
+     
+    }  
+    return DifilKKKKrying
+}
+console.log(fibonacci())
 
 
-/**
- * BONUS (aviso: o grau de dificuldade é bem maior !!!)
- */
 
-// crie a função fibonacci
-
-
-// descomente a linha seguinte para testar sua função
-// console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
