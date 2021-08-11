@@ -1,11 +1,11 @@
 // comece a criar a sua função add na linha abaixo
 function add(x,y) {
   let adi = x + y;
-
+ 
   return adi
 }
-console.log(add())
-
+console.log(add(3, 5))
+console.assert(add(3, 5) === 8, 'A função add não está funcionando como esperado');
 
 
 
@@ -18,51 +18,54 @@ function multiply(x,y) {
   }
   return multi
 }
-console.log(multiply())
-
+console.log(multiply(4, 6))
+console.assert(multiply(4, 6) === 24, 'A função multiply não está funcionando como esperado');
 // comece a criar a sua função power na linha abaixo
+
 function power(x,n){
-   let SithLord = 1;
+   let potencia = 1;
     
     for(let i = 0; i< n; i++){
-        SithLord = multiply(SithLord,x);
+        potencia = multiply(potencia,x);
 
 
     }
-    return SithLord
+    return potencia
 }
- console.log(power())
+ console.log(power(3, 4))
+ console.assert(power(3, 4) === 81, 'A função power não está funcionando como esperado');
 
 function factorial(x) {
-   let Inc = 1;
+   let resultFac = 1;
 
     for(let i = 1; i <= x ; i++){
-        Inc = multiply(Inc,i);
+        resultFac = multiply(resultFac,i);
 
     }
-    return Inc
+    return resultFac
 }
-console.log(factorial())
+console.log(factorial(5))
+console.assert(factorial(5) === 120, 'A função factorial não está funcionando como esperado');
 
 
 
 function fibonacci(z){
-   let Nani = 1;
-  let NicoNicoNi = 0;
-  let DifilKKKKrying = 0;
+   let variavel1 = 1;
+  let variavel2 = 0;
+  let somaVariaveis = 0;
    
 //tentei um mihão de variaveis ;-; 
 
     for(let i = 1; i <= z; i++){
-        DifilKKKKrying = add(Nani,NicoNicoNi);
-     Nani = NicoNicoNi;
-     NicoNicoNi = DifilKKKKrying;
+        somaVariaveis = add(variavel1,variavel2);
+     variavel1 = variavel2;
+     variavel2 = somaVariaveis;
 
      
     }  
-    return DifilKKKKrying
+    return somaVariaveis
 }
-console.log(fibonacci())
-
+console.log(fibonacci(7))
+console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
 
 
